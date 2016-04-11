@@ -1,0 +1,10 @@
+{
+  "esversion" : 6,
+  "undef": true,
+  "eqeqeq": true,
+  "quotmark": "single",
+  "globals": {
+    "Phaser": false,
+    "console": false,
+    "EasyStar": false}
+}
