@@ -16,6 +16,7 @@ var browserSync = require('browser-sync');
  * Using different folders/file names? Change these constants:
  */
 var PHASER_PATH = './node_modules/phaser/build/';
+var PHASER_DEBUG_PATH = './node_modules/phaser-debug/dist/';
 var BUILD_PATH = './build';
 var SCRIPTS_PATH = BUILD_PATH + '/scripts';
 var SOURCE_PATH = './src';
@@ -89,6 +90,21 @@ function copyPhaser() {
 
 }
 
+function copyPhaserDebug(){
+  var srcList = [];
+
+  if (!isProduction()) {
+      srcList.push('phaser-debug.js');
+  }
+
+  srcList = srcList.map(function(file) {
+      return PHASER_DEBUG_PATH + file;
+  });
+
+  return gulp.src(srcList)
+      .pipe(gulp.dest(SCRIPTS_PATH));
+}
+
 /**
  * Transforms ES2015 code into ES5 code.
  * Optionally: Creates a sourcemap file 'game.js.map' for debugging.
@@ -154,7 +170,8 @@ function serve() {
 gulp.task('cleanBuild', cleanBuild);
 gulp.task('copyStatic', ['cleanBuild'], copyStatic);
 gulp.task('copyPhaser', ['copyStatic'], copyPhaser);
-gulp.task('build', ['copyPhaser'], build);
+gulp.task('copyPhaserDebug', ['copyStatic'], copyPhaserDebug);
+gulp.task('build', ['copyPhaser','copyPhaserDebug'], build);
 gulp.task('fastBuild', build);
 gulp.task('serve', ['build'], serve);
 gulp.task('watch-js', ['fastBuild'], browserSync.reload); // Rebuilds and reloads the project when executed.
