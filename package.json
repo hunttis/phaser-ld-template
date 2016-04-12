@@ -1,5 +1,5 @@
 {
-  "name": "miniludum66-hunttis",
+  "name": "phaser-ld-template",
   "version": "0.0.1",
   "description": "Ludum dare Phaser Template",
   "main": "src/index.js",
