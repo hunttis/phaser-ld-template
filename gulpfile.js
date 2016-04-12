@@ -1,3 +1,4 @@
+/* jshint node: true */
 var del = require('del');
 var gulp = require('gulp');
 var path = require('path');
