@@ -121,7 +121,7 @@ function build() {
     logBuildMode();
 
     return browserify({
-        paths: [ path.join(__dirname, 'src') ],
+        paths: [ path.join(__dirname, SOURCE_PATH) ],
         entries: ENTRY_FILE,
         debug: true
     })
