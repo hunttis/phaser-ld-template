@@ -145,6 +145,7 @@ function build() {
 function serve() {
 
     var options = {
+        ghostMode: false,
         ui: {
           port: 3001
         },
