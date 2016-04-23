@@ -35,7 +35,7 @@ If you modify the contents of other files, please manually restart the server.
 
 Phaser 2.4.7 https://github.com/photonstorm/phaser
 
-Phaser Debug 1.1.9 https://github.com/englercj/phaser-debug
+Phaser Debug 1.1.8 https://github.com/englercj/phaser-debug
 
 ### Included as a static file
 
