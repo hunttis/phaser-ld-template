@@ -39,4 +39,4 @@ Phaser Debug 1.1.9 https://github.com/englercj/phaser-debug
 
 ### Included as a static file
 
-Phaser Tiled Plugin 2.0.1 https://github.com/englercj/phaser-tiled
+Phaser Tiled Plugin 2.0.2 https://github.com/englercj/phaser-tiled
