@@ -33,7 +33,7 @@ If you modify the contents of other files, please manually restart the server.
 
 ## Included (installed with npm install)
 
-Phaser 2.6.1 https://github.com/photonstorm/phaser
+Phaser 2.6.2 https://github.com/photonstorm/phaser
 
 Phaser Debug 1.1.8 https://github.com/englercj/phaser-debug
 
