@@ -29,7 +29,7 @@
     "yargs": "^4.3.2"
   },
   "dependencies": {
-    "phaser": "^2.6.2",
+    "phaser-ce": "^2.7.1",
     "phaser-debug": "^1.1.8"
   }
 }
